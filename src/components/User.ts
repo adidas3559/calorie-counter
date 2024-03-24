@@ -52,16 +52,22 @@ class User {
 
 }
 
+export default User;
 
-interface userInfo {
+
+export interface userInfo {
     name:string;
     age:number;
     weight:number;
 }
 
-interface userMacros {
+
+export interface userMacros {
     protein:number;
     carbs:number;
     fat:number;
     calories:number;
+    calorieGoal: number;
 }
+
+// export default userMacros;

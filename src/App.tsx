@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import SearchBar from './components/SearchBar';
+import MacroBars from './components/MacroBars';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         </div>
         
         <div>
+          <MacroBars />
           <SearchBar />
         </div>
       </div>
