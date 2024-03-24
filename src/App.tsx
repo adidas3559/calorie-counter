@@ -3,19 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import SearchBar from './components/SearchBar';
-import YouTube from 'react-youtube';
 
 function App() {
-
-  const opts = {
-    height: '390',
-    with: '640',
-    playerVars: {
-      autoplay: 1,
-      loop: 1,
-      fullscreen: 1
-    }
-  }
 
   return (
     <div className="App">
