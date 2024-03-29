@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import FoodItem from './FoodItem';
 import AddFoodModal from './AddFoodModal';
 
+// import { initializeApp } from "firebase/app";
+// import { QuerySnapshot, getFirestore, serverTimestamp, collection, addDoc } from "firebase/firestore";
+
 export interface ModalProps {
     item: FoodItem;
     closeModal?: ({}) => void;
 }
 
 
-const SearchBar = () => {
+const SearchBar = (fUser:any) => {
 
     const [searchInput, setSearchInput] = useState("");
     const [foodList, setFoodList] = useState<Array<FoodItem>>([]);
@@ -63,7 +66,7 @@ const SearchBar = () => {
                 <AddFoodModal item={selectedFood} closeModal={closeModal} />
             }
             <form action="submit" onSubmit={searchHandler}>
-                SEARCH BAR
+                SEARCH BAR!!
                 <input type="text" value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
                 <button type='submit'>Search</button>
             </form>

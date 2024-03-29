@@ -1,7 +1,7 @@
 import React from 'react';
 import User, { userInfo, userMacros} from './User';
 
-const MacroBars = () => {
+const MacroBars = (fUser:any) => {
     let userInfo:userInfo = {
         name: 'Steve Austin',
         age: 41,
